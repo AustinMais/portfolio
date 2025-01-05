@@ -6,19 +6,19 @@ export default function HomePage() {
       <div>
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24 gap-1 pl-4 pt-4">
           <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            <a href="/"> <span className="text-[hsl(280,100%,70%)]">Austin</span> Mais</a>
+            <Link href="/"> <span className="text-[hsl(280,100%,70%)]">Austin</span> Mais</Link>
           </h1>
           <h2 className="mt-3 text-xl">Full-Stack Software Engineer</h2>
           <p className="mt-4 max-w-xs leading-normal">I design robust applications, modernize architectures, and deliver solutions.</p>
           <ul className="ml-1 mt-8 flex items-center" aria-label="Social Media">
-            <li className="mr-5 shrink-0 text-xs"> <a href="https://github.com/AustinMais" target="_blank">
+            <li className="mr-5 shrink-0 text-xs"> <Link href="https://github.com/AustinMais" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-6 w-6" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-            </a>
+            </Link>
             </li>
             <li className="mr-5 shrink-0 text-xs">
-              <a href="https://www.linkedin.com/in/austin-mais" target="_blank">
+              <Link href="https://www.linkedin.com/in/austin-mais" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
-              </a>
+              </Link>
             </li>
           </ul>
         </header>
@@ -47,7 +47,7 @@ export default function HomePage() {
             Collaboration & Leadership: Experienced in leading technical decisions, collaborating with cross-functional teams, and delivering on project deadlines.
           </p>
           <p className="mb-4">
-            I thrive on solving complex challenges and delivering elegant, efficient solutions tailored to meet unique business needs. Let’s collaborate to bring your vision to life!
+            I thrive on solving complex challenges and delivering elegant, efficient solutions tailored to meet unique business needs. Let us collaborate to bring your vision to life!
           </p>
         </section>
         <section id="experience" className="container flex flex-col px-4 py-8 gap-1">
@@ -60,7 +60,7 @@ export default function HomePage() {
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200">
                       <div>
-                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.bankofamerica.com/" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, Bank of America (opens in a new tab)">
+                        <Link className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.bankofamerica.com/" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, Bank of America (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             <span>Software Engineer, </span>
@@ -69,7 +69,7 @@ export default function HomePage() {
                               </svg>
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
@@ -102,7 +102,7 @@ export default function HomePage() {
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200">
                       <div>
-                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://publicsafety.colorado.gov/" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, Colorado Department of Public Safety (opens in a new tab)">
+                        <Link className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://publicsafety.colorado.gov/" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, Colorado Department of Public Safety (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             <span>Software Engineer, </span>
@@ -111,7 +111,7 @@ export default function HomePage() {
                               </svg>
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
@@ -144,7 +144,7 @@ export default function HomePage() {
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200">
                       <div>
-                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.srsacquiom.com/" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, SRS Acquiom (opens in a new tab)">
+                        <Link className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.srsacquiom.com/" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, SRS Acquiom (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             <span>Software Engineer, </span> <span className="inline-block"> SRS Acquiom
@@ -152,7 +152,7 @@ export default function HomePage() {
                               </svg>
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
@@ -203,7 +203,7 @@ export default function HomePage() {
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200">
                       <div>
-                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.computershare.com/us" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, Computershare Loan Services (opens in a new tab)">
+                        <Link className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.computershare.com/us" target="_blank" rel="noreferrer noopener" aria-label="Software Engineer, Computershare Loan Services (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             <span>Software Engineer, </span> <span className="inline-block"> Computershare Loan Services
@@ -211,7 +211,7 @@ export default function HomePage() {
                               </svg>
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
@@ -251,7 +251,7 @@ export default function HomePage() {
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200">
                       <div>
-                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.trizettoprovider.com/" target="_blank" rel="noreferrer noopener" aria-label="Associate Software Engineer, TriZetto (opens in a new tab)">
+                        <Link className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.trizettoprovider.com/" target="_blank" rel="noreferrer noopener" aria-label="Associate Software Engineer, TriZetto (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             <span>Associate Software Engineer, </span> <span className="inline-block"> TriZetto
@@ -259,7 +259,7 @@ export default function HomePage() {
                               </svg>
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
@@ -295,7 +295,7 @@ export default function HomePage() {
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200">
                       <div>
-                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.rfsmart.com/" target="_blank" rel="noreferrer noopener" aria-label="Jr Software Engineer, RF-Smart (opens in a new tab)">
+                        <Link className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="https://www.rfsmart.com/" target="_blank" rel="noreferrer noopener" aria-label="Jr Software Engineer, RF-Smart (opens in a new tab)">
                           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                           <span>
                             <span>Jr Software Engineer, </span> <span className="inline-block"> RF-Smart
@@ -303,7 +303,7 @@ export default function HomePage() {
                               </svg>
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">

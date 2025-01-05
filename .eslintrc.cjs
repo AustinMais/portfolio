@@ -38,6 +38,7 @@ const config = {
         }
       }
     ],
+    "react/no-unescaped-entities": "off",
     "drizzle/enforce-delete-with-where": [
       "error",
       {
