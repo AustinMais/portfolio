@@ -50,8 +50,9 @@ export default function HomePage() {
           </li>
         </ul>
       </header>
-      <main id="content" className="pt-24 pl-24 lg:w-[52%] lg:py-24 lg:flex-col">
-        <section id="about" className="container flex md:flex-col px-4 py-8 gap-1">
+      <main id="content" className="pt-24 pl-24 lg:pl-0 lg:w-[52%] lg:py-24 lg:flex-col">
+        <section id="about" className="container flex md:flex-col pt-4 gap-1">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
           <p className="mb-4">
             As a seasoned software engineer with over eight years of professional experience, I specialize in designing and developing robust applications and modernizing software architectures. My expertise spans a wide range of technologies, including C#, JavaScript, PHP, React, Angular, Svelte, .NET Framework/Core, Laravel, and cloud platforms like Azure and AWS.
           </p>
@@ -76,7 +77,8 @@ export default function HomePage() {
             I thrive on solving complex challenges and delivering elegant, efficient solutions tailored to meet unique business needs. Let us collaborate to bring your vision to life!
           </p>
         </section>
-        <section id="experience" className="container flex flex-col px-4 py-8 gap-1">
+        <section id="experience" className="container flex flex-col pt-4 gap-1">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
           <div>
             <ol className="group/list">
               <li className="mb-12">
