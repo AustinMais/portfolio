@@ -2,39 +2,41 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <body className="bg-gradient-to-b from-[#2e026d] to-[#15162c] leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 lg:flex lg:justify-between lg:gap-4">
-      <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] md:flex-col lg:justify-between lg:py-8 pl-4" >
+    <body className="light:bg-gradient-to-b from-[#2e026d] to-[#15162c] dark:bg-gradient-to-b from-[#15162c] to-[#2e026d]  leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 lg:flex lg:justify-between lg:gap-4">
+      <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24 pl-24" >
         <div>
-          <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-            <Link href="/"><span className="text-[hsl(280,100%,70%)]">Austin</span> Mais</Link>
-          </h1>
-          <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Full-Stack Software Engineer</h2>
-          <p className="mt-4 max-w-xs leading-normal">I design robust applications, modernize architectures, and deliver solutions.</p>
+          <div>
+            <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+              <Link href="/"><span className="text-[hsl(280,100%,70%)]">Austin</span> Mais</Link>
+            </h1>
+            <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Full-Stack Software Engineer</h2>
+            <p className="mt-4 max-w-xs leading-normal">I design robust applications, modernize architectures, and deliver solutions.</p>
+          </div>
+          <nav className="nav hidden lg:block" aria-label="In-page jump links">
+            <ul className="mt-16 w-max">
+              <li>
+                <a className="group flex items-center py-3 active" href="#about">
+                  <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
+                  </span>
+                  <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
+                </a>
+              </li>
+              <li>
+                <a className="group flex items-center py-3" href="#experience">
+                  <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
+                  </span>
+                  <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
+                </a>
+              </li>
+              <li>
+                <a className="group flex items-center py-3" href="#projects">
+                  <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
+                  </span>
+                  <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav className="nav hidden lg:block" aria-label="In-page jump links">
-          <ul className="mt-16 w-max">
-            <li>
-              <a className="group flex items-center py-3 active" href="#about">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-                </span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
-              </a>
-            </li>
-            <li>
-              <a className="group flex items-center py-3" href="#experience">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-                </span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
-              </a>
-            </li>
-            <li>
-              <a className="group flex items-center py-3" href="#projects">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-                </span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span></a>
-            </li>
-          </ul>
-        </nav>
         <ul className="ml-1 mt-8 flex items-center" aria-label="Social Media">
           <li className="mr-5 shrink-0 text-xs">
             <Link href="https://github.com/AustinMais" target="_blank">
@@ -48,9 +50,8 @@ export default function HomePage() {
           </li>
         </ul>
       </header>
-      <main id="content" className="pt-24 lg:w-[52%] lg:py-24 md:flex-col">
+      <main id="content" className="pt-24 pl-24 lg:w-[52%] lg:py-24 lg:flex-col">
         <section id="about" className="container flex md:flex-col px-4 py-8 gap-1">
-          <h2 className="text-3xl font-bold">About</h2>
           <p className="mb-4">
             As a seasoned software engineer with over eight years of professional experience, I specialize in designing and developing robust applications and modernizing software architectures. My expertise spans a wide range of technologies, including C#, JavaScript, PHP, React, Angular, Svelte, .NET Framework/Core, Laravel, and cloud platforms like Azure and AWS.
           </p>
