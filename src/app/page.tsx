@@ -460,7 +460,6 @@ export default function HomePage() {
               </li>
             </ol>
           </div>
-
         </section>
       </main >
     </body >
