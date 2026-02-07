@@ -8,7 +8,7 @@ import { aboutParagraphs, experience, projects } from "~/data/resume";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 leading-relaxed text-slate-400 antialiased selection:bg-emerald-400/30 selection:text-emerald-100 lg:flex lg:justify-between lg:gap-4 relative bg-texture">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 leading-relaxed text-slate-400 antialiased selection:bg-blue-400/30 selection:text-blue-100 lg:flex lg:justify-between lg:gap-4 relative bg-texture">
       <Header />
       <main
         id="content"
