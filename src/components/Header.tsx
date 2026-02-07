@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { site, navLinks } from "~/data/resume";
-import { NavLink } from "./NavLink";
+import { site } from "~/data/resume";
+import { SectionNav } from "./SectionNav";
 import { SocialLinks } from "./SocialLinks";
 
 export function Header() {
@@ -22,16 +22,7 @@ export function Header() {
           </p>
         </div>
         <nav className="hidden lg:block" aria-label="In-page navigation">
-          <ul className="mt-16 w-max">
-            {navLinks.map((link, i) => (
-              <NavLink
-                key={link.href}
-                href={link.href}
-                label={link.label}
-                active={i === 0}
-              />
-            ))}
-          </ul>
+          <SectionNav />
         </nav>
       </div>
       <SocialLinks />
