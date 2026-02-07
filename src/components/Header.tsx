@@ -11,7 +11,7 @@ export function Header() {
         <div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
             <Link href="/" className="hover:opacity-90 transition-opacity">
-              <span className="text-emerald-400">{first}</span> {last}
+              <span className="text-blue-400">{first}</span> {last}
             </Link>
           </h1>
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
