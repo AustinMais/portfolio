@@ -10,8 +10,8 @@ export default {
       },
       colors: {
         accent: {
-          DEFAULT: "rgb(52 211 153)",
-          muted: "rgb(52 211 153 / 0.15)",
+          DEFAULT: "rgb(96 165 250)",
+          muted: "rgb(96 165 250 / 0.15)",
         },
         chalkboard: {
           DEFAULT: "#2C5234",

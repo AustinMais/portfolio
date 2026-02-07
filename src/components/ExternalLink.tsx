@@ -29,7 +29,7 @@ export function ExternalLink({
 }: ExternalLinkProps) {
   return (
     <a
-      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-emerald-400 focus-visible:text-emerald-400 group/link text-base"
+      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-400 focus-visible:text-blue-400 group/link text-base"
       href={href}
       target="_blank"
       rel="noreferrer noopener"
