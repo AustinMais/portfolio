@@ -2,13 +2,26 @@ export const site = {
   name: "Austin Mais",
   title: "Full-Stack Software Engineer",
   tagline:
-    "I design robust applications, modernize architectures, and deliver solutions.",
+    "I help startups and SaaS teams build intelligent web systems that automate work, improve user experience, and scale efficiently.",
+  heroHeadline: "AI-powered web systems for startups and SaaS teams",
+  heroSubheadline:
+    "I design and build modern web applications with intelligent automation built in — helping teams scale faster without adding complexity.",
+  ctaPrimary: "Book a strategy call",
+  ctaFinalHeadline: "Let's make your product smarter.",
+  ctaFinalButton: "Book a call",
+  /** Replace with your Calendly link or booking URL */
+  bookingUrl: "mailto:hello@example.com?subject=Strategy%20Call",
 } as const;
 
 export const navLinks = [
-  { href: "#about", label: "About" },
+  { href: "#hero", label: "Home" },
+  { href: "#problem-solution", label: "How I Help" },
+  { href: "#what-i-build", label: "What I Build" },
+  { href: "#case-studies", label: "Case Studies" },
+  { href: "#services", label: "Services" },
+  { href: "#process", label: "Process" },
   { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ] as const;
 
 export const socialLinks = [
@@ -129,5 +142,148 @@ export const projects = [
     description:
       "Developed and designed a portfolio website to showcase projects and resume. Utilized Next.js, Tailwind CSS, and Vercel for deployment.",
     tags: ["React", "Typescript", "HTML&CSS", "Tailwind", "Vercel"],
+  },
+] as const;
+
+// ——— Consulting landing copy ———
+export const problemSolution = {
+  title: "Your product shouldn't need more people to grow.",
+  copy: "Most startups hit a wall where growth means more support, more ops, and more manual work. I help teams embed AI directly into their web platforms — automating workflows, improving user experience, and unlocking scale without chaos.",
+} as const;
+
+export const whatIBuild = [
+  "High-performance websites & SaaS platforms",
+  "AI support agents & chatbots",
+  "Smart onboarding & personalization",
+  "Internal tools & workflow automation",
+  "Data-driven insights & analytics",
+] as const;
+
+export const whyThisWorks = {
+  title: "AI — without the hype.",
+  copy: "You don't need experimental models or complex infrastructure. You need: clear use cases, reliable integrations, and systems your team can actually maintain. That's what I build.",
+} as const;
+
+export const socialProof =
+  "I work directly with founders and teams to design systems that prioritize clarity, performance, and long-term scalability.";
+
+export const processSteps = [
+  "Strategy & discovery",
+  "System design",
+  "Development & AI integration",
+  "Launch, measure, iterate",
+] as const;
+
+export const whoThisIsFor = {
+  intro: "You'll get the most value if:",
+  bullets: [
+    "You're building or scaling a SaaS product",
+    "You want AI to reduce work, not add complexity",
+    "You care about long-term maintainability",
+  ],
+  notFor: "If you're looking for a quick template site, I'm probably not the right fit.",
+} as const;
+
+// ——— Service packages ———
+export const servicePackages = [
+  {
+    id: "startup",
+    name: "Startup Launch",
+    price: "from $5,000",
+    bestFor: "Early-stage startups and MVPs",
+    features: [
+      "Custom website or web app",
+      "Clean, scalable architecture",
+      "Basic AI feature (chatbot, smart search, or automation)",
+      "Deployment & launch support",
+    ],
+    tagline: "Ideal for validating ideas without cutting corners.",
+  },
+  {
+    id: "growth",
+    name: "Growth Systems",
+    price: "from $12,000",
+    popular: true,
+    bestFor: "SaaS products with users or revenue",
+    features: [
+      "Full-stack web application",
+      "AI-powered workflows or support tools",
+      "Smart onboarding or personalization",
+      "Performance & conversion optimization",
+      "Analytics & iteration support",
+    ],
+    tagline: "Designed to reduce manual work and improve product efficiency.",
+  },
+  {
+    id: "scale",
+    name: "Scale & Automation",
+    price: "from $25,000+",
+    bestFor: "Teams scaling fast",
+    features: [
+      "Advanced AI integrations",
+      "Internal tools & automation dashboards",
+      "Custom data pipelines & insights",
+      "Ongoing optimization & AI refinement",
+      "Priority support & roadmap planning",
+    ],
+    tagline: "Built to scale without increasing headcount.",
+  },
+] as const;
+
+export const retainer = {
+  range: "$750–$2,000/month",
+  items: [
+    "Feature expansion",
+    "AI optimization",
+    "System monitoring",
+    "Strategic guidance",
+  ],
+} as const;
+
+// ——— Case studies (business-first structure) ———
+export type CaseStudy = {
+  id: string;
+  title: string;
+  overview: string;
+  problem: string;
+  solution: string;
+  keyFeatures: readonly string[];
+  results: readonly string[];
+  techStack: string;
+  takeaway: string;
+  href?: string;
+  image?: string;
+  imageAlt?: string;
+};
+
+export const caseStudies: readonly CaseStudy[] = [
+  {
+    id: "ai-web-platform",
+    title: "AI-Enhanced Web Platform for Faster User Support & Onboarding",
+    overview:
+      "Built a modern web application enhanced with AI-driven features to reduce manual support workload and improve user onboarding efficiency.",
+    problem:
+      "The client needed a scalable web platform but faced challenges with repetitive support requests, slow onboarding, and limited insight into user behavior. (For personal projects: traditional workflows required manual review and repetitive actions, limiting scalability.)",
+    solution:
+      "I designed and developed a full-stack web application with an integrated AI assistant capable of answering common questions, guiding users through onboarding, and surfacing relevant information dynamically.",
+    keyFeatures: [
+      "AI-powered support assistant",
+      "Intelligent content search using embeddings",
+      "Automated user guidance",
+      "Scalable full-stack architecture",
+      "Performance-optimized frontend",
+    ],
+    results: [
+      "Reduced manual interactions",
+      "Faster user onboarding",
+      "Improved system maintainability",
+      "Foundation for future AI expansion",
+    ],
+    techStack: "React, Next.js, Node.js, OpenAI APIs, Cloud Hosting",
+    takeaway:
+      "This project demonstrates how AI can be embedded directly into a web platform to improve usability and reduce operational overhead.",
+    href: "https://github.com/AustinMais/portfolio",
+    image: "/PortfolioThumbnail.png",
+    imageAlt: "AI-enhanced web platform",
   },
 ] as const;

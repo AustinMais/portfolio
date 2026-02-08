@@ -4,8 +4,9 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Austin Mais",
-  description: "Austin Mais' Portfolio",
+  title: "Austin Mais — AI-Powered Web Systems for Startups & SaaS",
+  description:
+    "I help startups and SaaS teams build intelligent web systems that automate work, improve user experience, and scale efficiently.",
 };
 
 export default function RootLayout({
