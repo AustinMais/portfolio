@@ -145,6 +145,24 @@ export const projects = [
   },
 ] as const;
 
+/** Curated skills for APIs (e.g. monk-bot). Single source of truth with experience tags. */
+export const skills = [
+  "TypeScript",
+  "JavaScript",
+  "React",
+  "Node.js",
+  "C#",
+  ".NET",
+  "PHP",
+  "Laravel",
+  "SQL",
+  "Azure",
+  "AWS",
+  "AI",
+  "Next.js",
+  "Tailwind CSS",
+] as const;
+
 // ——— Consulting landing copy ———
 export const problemSolution = {
   title: "Your product shouldn't need more people to grow.",
