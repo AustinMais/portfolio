@@ -11,7 +11,7 @@ export { ProblemSolutionSection } from "./ProblemSolutionSection";
 export { WhatYouBuildSection } from "./WhatYouBuildSection";
 export { WhyThisWorksSection } from "./WhyThisWorksSection";
 export { SocialProofSection } from "./SocialProofSection";
-export { AIDemoSection } from "./AIDemoSection";
+export { AutomatedAssistant } from "./AutomatedAssistant";
 export { CaseStudyCard } from "./CaseStudyCard";
 export { ServicesSection } from "./ServicesSection";
 export { ProcessSection } from "./ProcessSection";
