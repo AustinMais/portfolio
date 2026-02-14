@@ -276,32 +276,58 @@ export type CaseStudy = {
 
 export const caseStudies: readonly CaseStudy[] = [
   {
-    id: "ai-web-platform",
-    title: "AI-Enhanced Web Platform for Faster User Support & Onboarding",
+    id: "consulting-portfolio",
+    title: "Consulting & Portfolio Site — AI-Powered Web Systems",
     overview:
-      "Built a modern web application enhanced with AI-driven features to reduce manual support workload and improve user onboarding efficiency.",
+      "A consulting landing page that positions AI-powered web systems for startups and SaaS, with clear services, process, case studies, and an embedded Automated Assistant for live interaction.",
     problem:
-      "The client needed a scalable web platform but faced challenges with repetitive support requests, slow onboarding, and limited insight into user behavior. (For personal projects: traditional workflows required manual review and repetitive actions, limiting scalability.)",
+      "Consulting and freelance work needed a single, credible home: one place for positioning (what I build, who it's for, how I work), proof (case studies), and a way for visitors to try an AI interaction without leaving the site.",
     solution:
-      "I designed and developed a full-stack web application with an integrated AI assistant capable of answering common questions, guiding users through onboarding, and surfacing relevant information dynamically.",
+      "Built this site with Next.js: structured copy and APIs for resume, consulting, case studies, and contact; a floating Automated Assistant so visitors can chat in-context; and a case-studies section that showcases real work including the assistant itself.",
     keyFeatures: [
-      "AI-powered support assistant",
-      "Intelligent content search using embeddings",
-      "Automated user guidance",
-      "Scalable full-stack architecture",
-      "Performance-optimized frontend",
+      "Consulting positioning and service pages",
+      "Structured JSON APIs for bot and external consumers",
+      "Floating Automated Assistant (try it in the corner)",
+      "Case studies with problem / solution / results",
+      "Responsive layout and clear CTAs",
     ],
     results: [
-      "Reduced manual interactions",
-      "Faster user onboarding",
-      "Improved system maintainability",
-      "Foundation for future AI expansion",
+      "One clear destination for consulting and portfolio",
+      "Visitors can interact with the assistant without leaving",
+      "APIs support automation and future integrations",
+      "Case studies demonstrate real outcomes",
     ],
-    techStack: "React, Next.js, Node.js, OpenAI APIs, Cloud Hosting",
+    techStack: "Next.js, React, TypeScript, Tailwind CSS, Vercel",
     takeaway:
-      "This project demonstrates how AI can be embedded directly into a web platform to improve usability and reduce operational overhead.",
-    href: "https://github.com/AustinMais/portfolio",
+      "A consulting site works best when it shows what you do, who it's for, how you work — and lets visitors experience your product (e.g. the assistant) right on the page.",
     image: "/PortfolioThumbnail.png",
-    imageAlt: "AI-enhanced web platform",
+    imageAlt: "Consulting portfolio site — AI-powered web systems",
+  },
+  {
+    id: "automated-assistant",
+    title: "Automated Assistant — In-Site Chat for Interaction",
+    overview:
+      "An embeddable AI assistant that runs on this consulting site so visitors can ask questions about AI support, onboarding, and embedding intelligence into products — without leaving the page.",
+    problem:
+      "Visitors want to see what “AI-powered” means in practice. A static page can describe it; an interactive assistant lets them try it and builds trust.",
+    solution:
+      "Integrated the Automated Assistant as a floating chat widget: one tap opens the assistant in a compact panel. The assistant is hosted separately and embedded here, so the site stays fast while offering a real interaction demo.",
+    keyFeatures: [
+      "Floating chat button across all pages",
+      "Compact panel with no heavy chrome — just the assistant",
+      "Live interaction with the same assistant used as a product demo",
+      "Accessible and responsive",
+    ],
+    results: [
+      "Visitors can try the assistant without leaving the site",
+      "Clear “see it in action” proof for consulting messaging",
+      "Reusable pattern for embedding the assistant elsewhere",
+    ],
+    techStack: "React, Next.js, iframe embed, automated-assistant-phi.vercel.app",
+    takeaway:
+      "Adding a real, usable assistant to a consulting site turns the value prop from “I build this” into “here it is — try it.”",
+    href: "https://automated-assistant-phi.vercel.app",
+    image: "/AssistantThumbnail.png",
+    imageAlt: "Automated Assistant chat widget",
   },
 ] as const;
