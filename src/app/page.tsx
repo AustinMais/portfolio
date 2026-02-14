@@ -5,7 +5,7 @@ import {
   WhatYouBuildSection,
   WhyThisWorksSection,
   SocialProofSection,
-  AIDemoSection,
+  AutomatedAssistant,
   CaseStudyCard,
   ServicesSection,
   ProcessSection,
@@ -35,7 +35,7 @@ export default function HomePage() {
         <WhatYouBuildSection />
         <WhyThisWorksSection />
         <SocialProofSection />
-        <AIDemoSection />
+        <AutomatedAssistant />
 
         <section id="case-studies" className="container flex flex-col gap-6 pt-4">
           <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">
